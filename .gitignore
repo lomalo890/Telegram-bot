@@ -1,3 +1,5 @@
 /.venv
 /pyproject.toml
 /tests
+/telegram_bot/secret_datas.txt
+/telegram_bot/frunzic.py
