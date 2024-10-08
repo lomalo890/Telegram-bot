@@ -1,10 +1,11 @@
 from telebot import TeleBot, types
 import psycopg2 as ps
+from frunzic import data
 
-HOST = 'localhost'
-DATABASE = 'george2066'
-USER = 'george2066'
-PASSWORD = 'qwerty555'
+HOST = data(0)
+DATABASE = data(1)
+USER = data(2)
+PASSWORD = data(3)
 
 connection = ps.connect(
      host=HOST,
@@ -42,7 +43,7 @@ connection.commit()
 
 
 
-bot = TeleBot('7478866945:AAGiJ4v5jMBJ6Y4WYUr3OUG7MWEXpUkgb2w');
+bot = TeleBot(data(4));
 
 name = '';
 surname = '';
